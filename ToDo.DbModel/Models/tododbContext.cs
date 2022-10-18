@@ -94,13 +94,11 @@ namespace ToDo.DbModel.Models
 
                 entity.Property(e => e.ConfirmPassword)
                     .IsRequired()
-                    .HasMaxLength(255)
-                    .HasDefaultValueSql("''");
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.Email)
                     .IsRequired()
-                    .HasMaxLength(255)
-                    .HasDefaultValueSql("''");
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.FirstName)
                     .IsRequired()
@@ -116,8 +114,7 @@ namespace ToDo.DbModel.Models
 
                 entity.Property(e => e.Password)
                     .IsRequired()
-                    .HasMaxLength(255)
-                    .HasDefaultValueSql("''");
+                    .HasMaxLength(255);
             });
 
             OnModelCreatingPartial(modelBuilder);
