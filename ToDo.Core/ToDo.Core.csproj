@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\ToDo.Common\ToDo.Common.csproj" />
+	  <ProjectReference Include="..\ToDo.DbModel\ToDo.DbModel.csproj" />
+	  <ProjectReference Include="..\ToDo.ModelViews\ToDo.ModelViews.csproj" />
+	</ItemGroup>
+
+</Project>
